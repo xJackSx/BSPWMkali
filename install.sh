@@ -92,8 +92,6 @@ sudo cp -v ~/BSPWMkali/.p10k.zsh-root /root/.p10k.zsh
 
 # Script
 
-sudo cp -v ~/BSPWMkali/scripts/cleartarget /usr/local/bin/
-sudo cp -v ~/BSPWMkali/scripts/settarget /usr/local/bin/
 sudo cp -v ~/BSPWMkali/scripts/whichSystem.py /usr/local/bin/
 sudo cp -v ~/BSPWMkali/scripts/screenshot /usr/local/bin/
 
@@ -116,8 +114,6 @@ chmod +x ~/.config/bin/ethernet_status.sh
 chmod +x ~/.config/bin/htb_status.sh
 chmod +x ~/.config/bin/htb_target.sh
 chmod +x ~/.config/polybar/launch.sh
-sudo chmod +x /usr/local/bin/cleartarget
-sudo chmod +x /usr/local/bin/settarge
 sudo chmod +x /usr/local/bin/whichSystem.py
 sudo chmod +x /usr/local/bin/screenshot
 
