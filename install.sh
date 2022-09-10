@@ -1,5 +1,7 @@
 #! /bin/bash
 
+ruta=$(pwd)
+
 #Instalar Entrono BSPWM 2022
 
 sudo apt update
@@ -57,43 +59,43 @@ sudo git clone --depth=1 https://github.com/romkatv/powerlevel10k.git /root/.pow
 # Configuramos el tema Nord de Rofi:
 
 mkdir -p ~/.config/rofi/themes
-cp ~/BSPWMkali/rofi/nord.rasi ~/.config/rofi/themes/
+cp $ruta/BSPWMkali/rofi/nord.rasi ~/.config/rofi/themes/
 
 # Instando lsd
 
-sudo dpkg -i ~/BSPWMkali/lsd.deb
+sudo dpkg -i $ruta/BSPWMkali/lsd.deb
 
 # Instalamos las HackNerdFonts
 
-sudo cp -v ~/BSPWM/fonts/HNF/* /usr/local/share/fonts/
+sudo cp -v $ruta/BSPWM/fonts/HNF/* /usr/local/share/fonts/
 
 # Instalando Fuentes de Polybar
 
-sudo cp -v ~/BSPWMkali/Config/polybar/fonts/* /usr/share/fonts/truetype/
+sudo cp -v $ruta/BSPWMkali/Config/polybar/fonts/* /usr/share/fonts/truetype/
 
 # Instalando Wallpaper de S4vitar
 
 mkdir ~/Wallpaper
-cp -v ~/BSPWMkali/Wallpaper/* ~/Wallpaper
+cp -v $ruta/BSPWMkali/Wallpaper/* ~/Wallpaper
 mkdir ~/ScreenShots
 
 # Copiando Archivos de Configuración
 
 rm -r ~/.config/polybar
-cp -rv ~/BSPWMkali/Config/* ~/.config/
+cp -rv $ruta/BSPWMkali/Config/* ~/.config/
 
 # Copia de configuracion de .p10k.zsh y .zshrc
 
 rm -rf ~/.zshrc
-cp -v ~/BSPWMkali/.zshrc ~/.zshrc
+cp -v $ruta/BSPWMkali/.zshrc ~/.zshrc
 
-cp -v ~/BSPWMkali/.p10k.zsh ~/.p10k.zsh
-sudo cp -v ~/BSPWMkali/.p10k.zsh-root /root/.p10k.zsh
+cp -v $ruta/BSPWMkali/.p10k.zsh ~/.p10k.zsh
+sudo cp -v $ruta/BSPWMkali/.p10k.zsh-root /root/.p10k.zsh
 
 # Script
 
-sudo cp -v ~/BSPWMkali/scripts/whichSystem.py /usr/local/bin/
-sudo cp -v ~/BSPWMkali/scripts/screenshot /usr/local/bin/
+sudo cp -v $ruta/BSPWMkali/scripts/whichSystem.py /usr/local/bin/
+sudo cp -v $ruta/BSPWMkali/scripts/screenshot /usr/local/bin/
 
 # Plugins ZSH
 
@@ -124,7 +126,7 @@ rofi-theme-selector
 # Removiendo Repositorio
 
 rm -rfv ~/github
-rm -rfv ~/BSPWMkali
+rm -rfv $ruta/BSPWMkali
 
 # Mensaje de Instalado
 
