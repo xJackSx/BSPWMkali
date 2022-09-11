@@ -63,7 +63,7 @@ cp $ruta/rofi/nord.rasi ~/.config/rofi/themes/
 
 # Instando lsd
 
-sudo dpkg -i $rutai/lsd.deb
+sudo dpkg -i $ruta/lsd.deb
 
 # Instalamos las HackNerdFonts
 
@@ -126,7 +126,7 @@ rofi-theme-selector
 # Removiendo Repositorio
 
 rm -rf ~/github
-rm -rf $ruta/*
+rm -rfv $ruta
 
 # Mensaje de Instalado
 
