@@ -14,13 +14,13 @@ Buenas compañeros,
 
 Este Script esta diseñado para los que usan Kali Linux.
 
-1.- Wallpaper
+2.- Wallpaper
 
 El wallpaper de nuestro queridisimo s4vitar esta alojado en una carpeta Wallpaper que se crea en nuestro HOME.
 
 La configuración del mismo es al gusto.
 
-2.- Nvim
+3.- Nvim
 
 Esta no esta incluida en el scripts
 
