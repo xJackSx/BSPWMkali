@@ -1,3 +1,7 @@
+Donaciones
+
+https://www.paypal.com/donate/?hosted_button_id=WXCZQQ8HGRVJE
+
 # Script-Kali
 
 1.- Uso del Script
