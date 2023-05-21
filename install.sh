@@ -87,6 +87,10 @@ rm -r ~/.config/polybar
 cp -rv $ruta/Config/* ~/.config/
 sudo cp -rv $ruta/kitty /opt/
 
+# Kitty Root
+
+sudo cp -rv $ruta/Config/kitty /root/.config/
+
 # Copia de configuracion de .p10k.zsh y .zshrc
 
 rm -rf ~/.zshrc
